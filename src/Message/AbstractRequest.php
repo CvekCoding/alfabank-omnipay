@@ -1,15 +1,10 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
-use Omnipay\Common\Exception\InvalidRequestException;
 use Omnipay\Common\Exception\RuntimeException;
 use Omnipay\Common\Message\AbstractRequest as BaseAbstractRequest;
 
-/**
- * Class AbstractRequest
- * @package Omnipay\Sberbank\Message
- */
 abstract class AbstractRequest extends BaseAbstractRequest
 {
     /**
@@ -137,7 +132,7 @@ abstract class AbstractRequest extends BaseAbstractRequest
     }
 
     /**
-     * Sberbank acquiring request the currency in the minimal payment units
+     * Alfabank acquiring request the currency in the minimal payment units
      *
      * @return int
      */

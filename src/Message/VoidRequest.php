@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 /**
  * Class VoidRequest

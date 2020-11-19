@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\BindCardRequest;
-use Omnipay\Sberbank\Message\BindCardResponse;
+use Omnipay\Alfabank\Message\BindCardRequest;
+use Omnipay\Alfabank\Message\BindCardResponse;
 
 /**
  * Class BindCardRequestTest

@@ -1,13 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 use Omnipay\Common\Exception\InvalidRequestException;
 
-/**
- * Class GetBindingsByCardOrIdRequest
- * @package Omnipay\Sberbank\Message
- */
 class GetBindingsByCardOrIdRequest extends AbstractRequest
 {
     /**

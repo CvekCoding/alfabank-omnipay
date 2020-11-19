@@ -1,8 +1,8 @@
 <?php
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\RefundRequest;
-use Omnipay\Sberbank\Message\RefundResponse;
+use Omnipay\Alfabank\Message\RefundRequest;
+use Omnipay\Alfabank\Message\RefundResponse;
 
 /**
  * Class RefundRequestTest
@@ -74,7 +74,9 @@ class RefundRequestTest extends AbstractRequestTest
      */
     public function testData()
     {
-        $this->assertEquals($this->request->getData(), $this->getRequestParameters());
+        $params = $this->getRequestParameters();
+        $params['amount'] = $params['amount'] * 100;
+        $this->assertEquals($this->request->getData(), $params);
     }
 
     /**

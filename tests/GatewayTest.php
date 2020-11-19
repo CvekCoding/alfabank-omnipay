@@ -1,22 +1,22 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests;
+namespace Omnipay\Alfabank\Tests;
 
 use Omnipay\Common\Exception\BadMethodCallException;
-use Omnipay\Sberbank\Gateway;
-use Omnipay\Sberbank\Message\AuthorizeRequest;
-use Omnipay\Sberbank\Message\BindCardRequest;
-use Omnipay\Sberbank\Message\CaptureRequest;
-use Omnipay\Sberbank\Message\ExtendedOrderStatusRequest;
-use Omnipay\Sberbank\Message\GetBindingsRequest;
-use Omnipay\Sberbank\Message\GetLastOrdersForMerchantsRequest;
-use Omnipay\Sberbank\Message\OrderStatusRequest;
-use Omnipay\Sberbank\Message\PurchaseRequest;
-use Omnipay\Sberbank\Message\RefundRequest;
-use Omnipay\Sberbank\Message\UnBindCardRequest;
-use Omnipay\Sberbank\Message\UpdateSSLCardListRequest;
-use Omnipay\Sberbank\Message\VerifyEnrollmentRequest;
-use Omnipay\Sberbank\Message\VoidRequest;
+use Omnipay\Alfabank\Gateway;
+use Omnipay\Alfabank\Message\AuthorizeRequest;
+use Omnipay\Alfabank\Message\BindCardRequest;
+use Omnipay\Alfabank\Message\CaptureRequest;
+use Omnipay\Alfabank\Message\ExtendedOrderStatusRequest;
+use Omnipay\Alfabank\Message\GetBindingsRequest;
+use Omnipay\Alfabank\Message\GetLastOrdersForMerchantsRequest;
+use Omnipay\Alfabank\Message\OrderStatusRequest;
+use Omnipay\Alfabank\Message\PurchaseRequest;
+use Omnipay\Alfabank\Message\RefundRequest;
+use Omnipay\Alfabank\Message\UnBindCardRequest;
+use Omnipay\Alfabank\Message\UpdateSSLCardListRequest;
+use Omnipay\Alfabank\Message\VerifyEnrollmentRequest;
+use Omnipay\Alfabank\Message\VoidRequest;
 use Omnipay\Tests\GatewayTestCase;
 
 /**

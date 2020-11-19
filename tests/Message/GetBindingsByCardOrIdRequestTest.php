@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\GetBindingsByCardOrIdRequest;
-use Omnipay\Sberbank\Message\GetBindingsByCardOrIdResponse;
+use Omnipay\Alfabank\Message\GetBindingsByCardOrIdRequest;
+use Omnipay\Alfabank\Message\GetBindingsByCardOrIdResponse;
 
 /**
  * Class GetBindingsByCardOrIdRequestTest

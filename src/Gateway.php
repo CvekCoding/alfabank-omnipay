@@ -1,28 +1,24 @@
 <?php
 
-namespace Omnipay\Sberbank;
+namespace Omnipay\Alfabank;
 
 use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Exception\BadMethodCallException;
 use Omnipay\Common\Message\RequestInterface;
-use Omnipay\Sberbank\Message\AuthorizeRequest;
-use Omnipay\Sberbank\Message\BindCardRequest;
-use Omnipay\Sberbank\Message\CaptureRequest;
-use Omnipay\Sberbank\Message\ExtendedOrderStatusRequest;
-use Omnipay\Sberbank\Message\GetBindingsRequest;
-use Omnipay\Sberbank\Message\GetLastOrdersForMerchantsRequest;
-use Omnipay\Sberbank\Message\OrderStatusRequest;
-use Omnipay\Sberbank\Message\PurchaseRequest;
-use Omnipay\Sberbank\Message\RefundRequest;
-use Omnipay\Sberbank\Message\UnBindCardRequest;
-use Omnipay\Sberbank\Message\UpdateSSLCardListRequest;
-use Omnipay\Sberbank\Message\VerifyEnrollmentRequest;
-use Omnipay\Sberbank\Message\VoidRequest;
+use Omnipay\Alfabank\Message\AuthorizeRequest;
+use Omnipay\Alfabank\Message\BindCardRequest;
+use Omnipay\Alfabank\Message\CaptureRequest;
+use Omnipay\Alfabank\Message\ExtendedOrderStatusRequest;
+use Omnipay\Alfabank\Message\GetBindingsRequest;
+use Omnipay\Alfabank\Message\GetLastOrdersForMerchantsRequest;
+use Omnipay\Alfabank\Message\OrderStatusRequest;
+use Omnipay\Alfabank\Message\PurchaseRequest;
+use Omnipay\Alfabank\Message\RefundRequest;
+use Omnipay\Alfabank\Message\UnBindCardRequest;
+use Omnipay\Alfabank\Message\UpdateSSLCardListRequest;
+use Omnipay\Alfabank\Message\VerifyEnrollmentRequest;
+use Omnipay\Alfabank\Message\VoidRequest;
 
-/**
- * Class Gateway
- * @package Omnipay\Sberbank
- */
 class Gateway extends AbstractGateway
 {
     /**
@@ -32,7 +28,7 @@ class Gateway extends AbstractGateway
      */
     public function getName()
     {
-        return 'Sberbank';
+        return 'Alfabank';
     }
 
     /**
@@ -50,7 +46,7 @@ class Gateway extends AbstractGateway
             'userName' => '',
             'password' => '',
             'testMode' => false,
-            'endPoint' => 'https://securepayments.sberbank.ru/payment/rest/'
+            'endPoint' => 'https://web.rbsuat.com/ab/rest/'
         ];
     }
 
@@ -63,7 +59,7 @@ class Gateway extends AbstractGateway
     public function setTestMode($testMode)
     {
         $this->setEndPoint(
-            $testMode ? 'https://3dsec.sberbank.ru/payment/rest/' : 'https://securepayments.sberbank.ru/payment/rest/'
+            $testMode ? 'https://web.rbsuat.com/ab/rest/' : 'https://web.rbsuat.com/ab/rest/'
         );
 
         return $this->setParameter('testMode', $testMode);
@@ -210,7 +206,7 @@ class Gateway extends AbstractGateway
      */
     public function purchase(array $options = []): RequestInterface
     {
-        return $this->createRequest(PurchaseRequest::class, $options);
+        return $this->createRequest(AuthorizeRequest::class, $options);
     }
 
     /**
@@ -284,7 +280,7 @@ class Gateway extends AbstractGateway
      *
      * @return boolean True if this gateway supports the status() method
      */
-    public function supportsOrderStatus()
+    public function supportsOrderStatus(): bool
     {
         return method_exists($this, 'orderStatus');
     }
@@ -305,7 +301,7 @@ class Gateway extends AbstractGateway
      *
      * @return boolean True if this gateway supports the extendedOrderStatus() method
      */
-    public function supportsExtendedOrderStatus()
+    public function supportsExtendedOrderStatus(): bool
     {
         return method_exists($this, 'extendedOrderStatus');
     }

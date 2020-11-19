@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 /**
  * Class OrderStatusResponse
@@ -164,5 +164,13 @@ class OrderStatusResponse extends AbstractResponse
     {
         $bindingInfo = $this->getBindingInfo();
         return array_key_exists('bindingId', $bindingInfo) ? $bindingInfo['bindingId'] : null;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function isSuccessful()
+    {
+        return $this->getOrderStatus() == 2;
     }
 }

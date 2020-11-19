@@ -1,7 +1,7 @@
 <?php
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\UnBindCardRequest;
+use Omnipay\Alfabank\Message\UnBindCardRequest;
 
 /**
  * Class UnBindCardRequestTest

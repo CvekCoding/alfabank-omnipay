@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\GetLastOrdersForMerchantsRequest;
-use Omnipay\Sberbank\Message\GetLastOrdersForMerchantsResponse;
+use Omnipay\Alfabank\Message\GetLastOrdersForMerchantsRequest;
+use Omnipay\Alfabank\Message\GetLastOrdersForMerchantsResponse;
 
 /**
  * Class GetLastOrdersForMerchantsRequestTest

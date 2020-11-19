@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 /**
  * Class RefundRequest
@@ -18,7 +18,7 @@ class RefundRequest extends AbstractRequest
 
         $data = [
             'orderId' => $this->getOrderId(),
-            'amount' => $this->getAmount(),
+            'amount' => $this->getAmountInteger(),
         ];
 
         return $data;
