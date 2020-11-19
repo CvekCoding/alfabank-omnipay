@@ -1,5 +1,5 @@
 {
-  "name": "CvekCoding/alfabank-omnipay",
+  "name": "cvek/alfabank-omnipay",
   "description": "Omnipay driver for Alfabank",
   "type": "library",
   "license": "MIT",
