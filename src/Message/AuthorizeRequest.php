@@ -21,7 +21,6 @@ class AuthorizeRequest extends AbstractRequest
         ];
 
         $additionalParams = [
-            'currency',
             'failUrl',
             'description',
             'language',
@@ -246,7 +245,6 @@ class AuthorizeRequest extends AbstractRequest
     {
         $url = $this->getEndPoint() . $this->getMethod();
         $this->validate('userName', 'password');
-        $data['currency'] = $this->getCurrencyNumeric();
         $data['amount'] = $this->getAmountInteger();
         $data = array_merge(
             [
