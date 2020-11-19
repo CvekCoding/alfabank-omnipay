@@ -1,8 +1,8 @@
 <?php
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\ExtendBindingRequest;
-use Omnipay\Sberbank\Message\ExtendBindingResponse;
+use Omnipay\Alfabank\Message\ExtendBindingRequest;
+use Omnipay\Alfabank\Message\ExtendBindingResponse;
 
 /**
  * Class ExtendBindingRequestTest

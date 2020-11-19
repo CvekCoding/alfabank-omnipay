@@ -1,8 +1,8 @@
 <?php
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\VerifyEnrollmentRequest;
-use Omnipay\Sberbank\Message\VerifyEnrollmentResponse;
+use Omnipay\Alfabank\Message\VerifyEnrollmentRequest;
+use Omnipay\Alfabank\Message\VerifyEnrollmentResponse;
 
 /**
  * Class VerifyEnrollmentRequestTest

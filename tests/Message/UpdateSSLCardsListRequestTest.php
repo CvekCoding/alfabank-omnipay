@@ -1,8 +1,8 @@
 <?php
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\UpdateSSLCardListRequest;
-use Omnipay\Sberbank\Message\UpdateSSLCardListResponse;
+use Omnipay\Alfabank\Message\UpdateSSLCardListRequest;
+use Omnipay\Alfabank\Message\UpdateSSLCardListResponse;
 
 /**
  * Class UpdateSslCardsListRequestTest

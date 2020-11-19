@@ -1,16 +1,20 @@
 {
-  "name": "andrewnovikof/omnipay-sberbank",
-  "description": "Omnipay driver for Sberbank",
+  "name": "CvekCoding/alfabank-omnipay",
+  "description": "Omnipay driver for Alfabank",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
       "name": "AndrewNovikof",
       "email": "andrewnovikofff@gmail.com"
+    },
+    {
+      "name": "Logachev Sergey",
+      "email": "serg@baitek.org"
     }
   ],
   "keywords": [
-    "sberbank",
+    "alfabank",
     "acquiring",
     "rest",
     "api",
@@ -27,12 +31,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Omnipay\\Sberbank\\": "src/"
+      "Omnipay\\Alfabank\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Omnipay\\Sberbank\\Tests\\": "tests/"
+      "Omnipay\\Alfabank\\Tests\\": "tests"
     }
   },
   "minimum-stability": "dev",

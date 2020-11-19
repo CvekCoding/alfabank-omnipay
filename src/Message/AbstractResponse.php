@@ -1,14 +1,10 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 use Omnipay\Common\Message\AbstractResponse as BaseAbstractResponse;
 use Omnipay\Common\Message\RequestInterface;
 
-/**
- * Class AbstractResponse
- * @package Omnipay\Sberbank\Message
- */
 abstract class AbstractResponse extends BaseAbstractResponse
 {
     /**

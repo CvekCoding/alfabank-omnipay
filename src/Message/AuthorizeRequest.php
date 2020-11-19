@@ -1,13 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 use Omnipay\Common\Exception\RuntimeException;
 
-/**
- * Class AuthorizeRequest
- * @package Omnipay\Sberbank\Message
- */
 class AuthorizeRequest extends AbstractRequest
 {
     /**

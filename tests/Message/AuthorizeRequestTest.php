@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\AuthorizeRequest;
-use Omnipay\Sberbank\Message\AuthorizeResponse;
+use Omnipay\Alfabank\Message\AuthorizeRequest;
+use Omnipay\Alfabank\Message\AuthorizeResponse;
 
 /**
  * Class AuthorizeRequestTest

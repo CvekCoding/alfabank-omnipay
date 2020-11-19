@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
 use Omnipay\Common\Exception\RuntimeException;
-use Omnipay\Sberbank\Message\AbstractRequest;
+use Omnipay\Alfabank\Message\AbstractRequest;
 use Omnipay\Tests\TestCase;
 
 /**

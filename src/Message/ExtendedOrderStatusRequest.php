@@ -1,13 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 use Omnipay\Common\Exception\InvalidRequestException;
 
-/**
- * Class ExtendedOrderStatusRequest
- * @package Omnipay\Sberbank\Message
- */
 class ExtendedOrderStatusRequest extends AbstractRequest
 {
     /**

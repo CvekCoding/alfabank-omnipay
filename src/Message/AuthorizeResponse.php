@@ -1,13 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
 use Omnipay\Common\Message\RedirectResponseInterface;
 
-/**
- * Class AuthorizeResponse
- * @package Omnipay\Sberbank\Message
- */
 class AuthorizeResponse extends AbstractResponse implements RedirectResponseInterface
 {
     /**
