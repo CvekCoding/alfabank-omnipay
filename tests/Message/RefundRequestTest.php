@@ -1,8 +1,8 @@
 <?php
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\RefundRequest;
-use Omnipay\Sberbank\Message\RefundResponse;
+use Omnipay\Alfabank\Message\RefundRequest;
+use Omnipay\Alfabank\Message\RefundResponse;
 
 /**
  * Class RefundRequestTest

@@ -1,11 +1,7 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
-/**
- * Class ExtendedOrderStatusResponse
- * @package Omnipay\Sberbank\Message
- */
 class ExtendedOrderStatusResponse extends OrderStatusResponse
 {
     /**

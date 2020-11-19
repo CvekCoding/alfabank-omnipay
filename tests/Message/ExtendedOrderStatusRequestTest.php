@@ -1,9 +1,9 @@
 <?php
 
-namespace Omnipay\Sberbank\Tests\Message;
+namespace Omnipay\Alfabank\Tests\Message;
 
-use Omnipay\Sberbank\Message\ExtendedOrderStatusRequest;
-use Omnipay\Sberbank\Message\ExtendedOrderStatusResponse;
+use Omnipay\Alfabank\Message\ExtendedOrderStatusRequest;
+use Omnipay\Alfabank\Message\ExtendedOrderStatusResponse;
 
 /**
  * Class ExtendOrderStatusRequestTest

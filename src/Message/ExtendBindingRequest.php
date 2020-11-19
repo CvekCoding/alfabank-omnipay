@@ -1,11 +1,7 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
-/**
- * Class ExtendBindingRequest
- * @package Omnipay\Sberbank\Message
- */
 class ExtendBindingRequest extends AbstractRequest
 {
     /**

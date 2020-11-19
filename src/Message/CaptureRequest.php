@@ -1,11 +1,7 @@
 <?php
 
-namespace Omnipay\Sberbank\Message;
+namespace Omnipay\Alfabank\Message;
 
-/**
- * Class CaptureRequest
- * @package Omnipay\Sberbank\Message
- */
 class CaptureRequest extends AbstractRequest
 {
     /**
